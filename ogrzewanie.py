@@ -37,3 +37,4 @@ calkowita_powierzchnia = 0
 for powierzchnia in powierzchnie:
     calkowita_powierzchnia = calkowita_powierzchnia + powierzchnia
 print(f'Calkowita powierzchnia: {calkowita_powierzchnia}')
+print(f'Całokowiete zapotrzebowanie: {calkowita_powierzchnia*150}')
