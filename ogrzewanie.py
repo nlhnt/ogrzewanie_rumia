@@ -30,7 +30,10 @@ def oblicz_zapotrzebowanie_cieplne(pomieszczenia: typing.Dict) -> typing.Dict:
 zapotrzebowanie_pomieszczen = (
     oblicz_zapotrzebowanie_cieplne(pomieszczenia=pomieszczenia)
 )
-print(f'Zapotrzebowanie cieplne pomieszczen: \n{zapotrzebowanie_pomieszczen}')
+print(
+    f'Zapotrzebowanie cieplne pomieszczen [W]: ' +
+    f'\n{zapotrzebowanie_pomieszczen}'
+)
 
 powierzchnie = list(pomieszczenia.values())
 calkowita_powierzchnia = 0
