@@ -5,7 +5,7 @@ sypialnia = 3.8*4
 kuchnia = 3.3*3.5
 lazienka = 2.2*1.7
 korytarz = (1*2.7)+(0.8*0.8)
-# dict pomiesczen
+# dict pomieszczen
 pomieszczenia = {
     "pokoj_dzienny": pokoj_dzienny,
     "sypialnia": sypialnia,
