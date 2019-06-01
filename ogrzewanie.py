@@ -36,5 +36,5 @@ powierzchnie = list(pomieszczenia.values())
 calkowita_powierzchnia = 0
 for powierzchnia in powierzchnie:
     calkowita_powierzchnia = calkowita_powierzchnia + powierzchnia
-print(f'Calkowita powierzchnia: {calkowita_powierzchnia}')
-print(f'Całokowiete zapotrzebowanie: {calkowita_powierzchnia*150}')
+print(f'Calkowita powierzchnia: {calkowita_powierzchnia} m2')
+print(f'Całokowiete zapotrzebowanie: {calkowita_powierzchnia*150/1000} [kW]')
