@@ -15,7 +15,7 @@ pomieszczenia = {
 }
 
 # bezpieczne zalozenie wymganej do ogrzania pomieszczen energii w domu [W/m2]
-zaptorzebowanie_na_energie = 150
+zaptorzebowanie_na_energie = 130
 
 
 def oblicz_zapotrzebowanie_cieplne(pomieszczenia: typing.Dict) -> typing.Dict:
@@ -41,3 +41,15 @@ for powierzchnia in powierzchnie:
     calkowita_powierzchnia = calkowita_powierzchnia + powierzchnia
 print(f'Calkowita powierzchnia: {calkowita_powierzchnia} m2')
 print(f'Całokowiete zapotrzebowanie: {calkowita_powierzchnia*150/1000} [kW]')
+
+
+def oblicz_liczbe_zeberek(zapotrzebowanie, moc_zeberka):
+    return (zapotrzebowanie/moc_zeberka)
+
+for pom in zapotrzebowanie_pomieszczen.items():
+    print(
+        f"""{pom[0]}: {oblicz_liczbe_zeberek(
+            zapotrzebowanie=pom[1],
+            moc_zeberka=120
+            )}"""
+    )
